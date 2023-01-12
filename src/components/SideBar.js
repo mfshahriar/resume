@@ -2,19 +2,20 @@ import React from "react";
 import ContactCircles from "./ContactCircle";
 import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import MenuTile from "./MenuTile";
+import config from "../config/config";
 
 const contacts = [
   {
     avatar: <FaLinkedinIn className=" fill-white h-6 w-6 my-auto mx-auto" />,
-    link: "https://www.linkedin.com/in/mazharul-haq-b602aa21a/",
+    link: config.linkedinLink,
   },
   {
     avatar: <FaGithub className="fill-white h-6 w-6 my-auto mx-auto" />,
-    link: "https://github.com/Matr1x01",
+    link: config.githubLink,
   },
   {
     avatar: <FaFacebookF className="fill-white h-6 w-6 my-auto mx-auto" />,
-    link: "https://www.facebook.com/a.silent.man8/",
+    link: config.facebookLink,
   },
 ];
 const SideBar = ({
